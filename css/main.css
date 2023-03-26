@@ -1,0 +1,469 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: "Raleway", sans-serif;
+  background-color: hsl(218, 28%, 13%);
+  color: hsl(0, 0%, 100%);
+}
+
+.section {
+  padding: 8em 3em 0 3em;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.nav {
+  position: fixed;
+  width: 100%;
+  padding: 1.5em;
+  background-color: hsl(217, 28%, 15%);
+  z-index: 100;
+}
+.nav__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__logo-pic {
+  width: 5.5em;
+  cursor: pointer;
+}
+.nav__menu-item {
+  padding: 1em 0.5em;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.nav__menu-item:hover {
+  color: hsl(176, 68%, 64%);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 6em;
+  background-color: hsl(217, 28%, 15%);
+  z-index: 0;
+}
+.header__img {
+  width: 90%;
+  padding: 1.5em;
+  z-index: 2;
+}
+.header__curvy {
+  width: 100%;
+  padding: 0;
+  margin-top: -5em;
+  z-index: 1;
+}
+.header__curvy-large {
+  display: none;
+}
+
+.welcome-section {
+  padding: 4em 1.5em;
+  position: relative;
+}
+.welcome-section__text {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.welcome-section__heading {
+  padding: 0 1em;
+  margin-top: -4.5em;
+  font-size: 2.4rem;
+  line-height: 1.3em;
+  z-index: 4;
+}
+.welcome-section__paragraph {
+  padding: 2em;
+  font-size: 1.6rem;
+}
+.welcome-section__btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3em;
+  width: 12em;
+  font-size: 1.6rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 25px;
+  background-color: hsl(198, 60%, 50%);
+  font-family: "Raleway", sans-serif;
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.info-section__wrapper {
+  display: grid;
+  margin: 0 auto;
+  max-width: 1000px;
+  width: 100%;
+}
+.info-section__box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3em;
+  padding: 2em;
+}
+.info-section__box:nth-child(4) {
+  margin-bottom: 0;
+}
+.info-section__box--info {
+  padding: 1.5em 0 1em 0;
+}
+
+.fylo-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.fylo-section__info {
+  font-size: 1.9rem;
+}
+.fylo-section__paragraph--one {
+  padding: 1em 0 0 0;
+}
+.fylo-section__paragraph--two {
+  padding: 1em 0;
+}
+.fylo-section__link {
+  display: flex;
+  position: relative;
+  padding-bottom: 1em;
+  color: hsl(176, 68%, 64%);
+}
+.fylo-section .header__img {
+  width: 100%;
+  align-self: center;
+}
+
+.reviews-section__wrapper {
+  display: grid;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2em;
+}
+.reviews-section__box {
+  position: relative;
+  display: flex;
+  padding: 2em 3em 2em 2em;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: hsl(219, 30%, 18%);
+}
+.reviews-section__box--quote {
+  position: absolute;
+  width: 2em;
+  top: -1.5em;
+  left: 0.5em;
+}
+.reviews-section__box-opinion {
+  margin-bottom: 1.5em;
+}
+.reviews-section__box-author {
+  display: flex;
+}
+.reviews-section__box-author--avatar {
+  width: 2.5em;
+  height: 2.5em;
+  border: 1px solid black;
+  border-radius: 50%;
+}
+.reviews-section__box-author-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1em;
+}
+.reviews-section__box-author-info--name {
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+.reviews-section__box-author-info--grade {
+  padding-top: 0.2em;
+  font-size: 1.1rem;
+  letter-spacing: 0.1em;
+}
+
+.early-access {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.early-access-box {
+  max-width: 700px;
+  padding: 2em;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.575);
+  background-color: hsl(217, 28%, 15%);
+}
+.early-access-box--heading {
+  font-size: 1.6rem;
+}
+.early-access-box--text {
+  padding: 1.5em 0;
+}
+.early-access-box--btn {
+  background-color: hsl(198, 60%, 50%);
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+  width: 100%;
+  padding: 0.7em 0;
+  border-radius: 25px;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+.early-access-box--input {
+  position: relative;
+  padding-left: 1em;
+  padding-right: 1em;
+  margin-bottom: 1em;
+  font-weight: normal;
+  width: 100%;
+  padding: 0.7em 0;
+  border-radius: 25px;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2em;
+  padding: 2em 0;
+  width: 100%;
+  background-color: hsl(216, 53%, 9%);
+}
+.footer img {
+  width: 10em;
+  margin-right: 2em;
+}
+
+@media (max-width: 361px) {
+  .welcome-section__heading {
+    margin-top: -3.5em;
+  }
+  .welcome-section__btn {
+    height: 3em;
+    width: 10em;
+  }
+  .reviews-section__box-opinion {
+    font-size: 1.3rem;
+  }
+  .reviews-section__box-author--avatar {
+    width: 2.3em;
+    height: 2.3em;
+  }
+  .reviews-section__box-author-info--name {
+    font-size: 1.3rem;
+  }
+  .reviews-section__box-author-info--grade {
+    font-size: 0.9rem;
+  }
+  .early-access-box--input {
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+@media (min-width: 576px) {
+  .nav__logo-pic {
+    width: 7.5em;
+  }
+  .nav__menu-item {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 768px) {
+  .header__img {
+    padding: 1.5em;
+    width: 70%;
+  }
+  .header__curvy {
+    margin-top: -8em;
+  }
+  .welcome-section__heading {
+    font-size: 2.9rem;
+  }
+  .welcome-section__paragraph {
+    font-size: 1.7rem;
+  }
+  .welcome-section__btn {
+    height: 3.5em;
+    width: 13em;
+    font-size: 1.7rem;
+    font-weight: bold;
+    border-radius: 30px;
+  }
+  .fylo-section__info {
+    padding-top: 1em;
+    font-size: 2.2rem;
+  }
+  .fylo-section__paragraph--one {
+    font-size: 1.6rem;
+  }
+  .fylo-section__paragraph--two {
+    padding: 0.8em 0;
+    font-size: 1.6rem;
+  }
+  .fylo-section .header__img {
+    width: 70%;
+  }
+  .early-access-box--heading {
+    font-size: 2rem;
+  }
+  .early-access-box--input {
+    margin-bottom: 1.2em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+}
+@media (min-width: 992px) {
+  .section {
+    padding: 10em 5em 0 5em;
+  }
+  .header__img {
+    width: 60%;
+  }
+  .header__curvy {
+    display: none;
+  }
+  .header__curvy-large {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin-top: -8em;
+    z-index: 1;
+  }
+  .welcome-section {
+    padding: 0em 1.5em;
+  }
+  .welcome-section__heading {
+    padding: 0 1em;
+    margin-top: -7.5em;
+    font-size: 2.6rem;
+  }
+  .welcome-section__paragraph {
+    font-size: 1.8rem;
+    z-index: 5;
+  }
+}
+@media (min-width: 1200px) {
+  .header__img {
+    width: 50%;
+  }
+  .header__curvy-large {
+    margin-top: 4em;
+  }
+  .welcome-section {
+    padding: 0em 25em;
+  }
+  .welcome-section__heading {
+    padding: 0 1em;
+    margin-top: -23em;
+    font-size: 2.6rem;
+  }
+  .welcome-section__paragraph {
+    font-size: 1.8rem;
+    z-index: 5;
+  }
+  .welcome-section__btn {
+    margin-top: -19rem;
+    z-index: 10;
+  }
+  .info-section {
+    padding-top: 2em;
+  }
+  .info-section__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+  .info-section__box {
+    max-height: 200px;
+  }
+  .fylo-section {
+    flex-direction: row;
+    align-items: center;
+  }
+  .fylo-section .header__img {
+    width: 50%;
+  }
+  .fylo-section__text {
+    margin-left: 2em;
+  }
+  .reviews-section__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+}
+@media (min-width: 1550px) {
+  .nav__logo-pic {
+    width: 9.5em;
+  }
+  .nav__menu-item {
+    padding: 1em 1em;
+    font-size: 2rem;
+  }
+  .header__img {
+    width: 35%;
+  }
+  .header__curvy-large {
+    margin-top: 0em;
+  }
+  .welcome-section {
+    padding: 0em 25em;
+  }
+  .welcome-section__heading {
+    padding: 0 1em;
+    margin-top: -35em;
+    font-size: 2.6rem;
+  }
+  .welcome-section__paragraph {
+    font-size: 1.8rem;
+    z-index: 5;
+  }
+  .welcome-section__btn {
+    margin-top: -35rem;
+    z-index: 10;
+  }
+  .info-section {
+    padding-top: 0;
+  }
+  .info-section__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  }
+  .fylo-section .header__img {
+    width: 35%;
+  }
+}/*# sourceMappingURL=main.css.map */
